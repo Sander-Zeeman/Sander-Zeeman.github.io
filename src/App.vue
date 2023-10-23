@@ -1,32 +1,19 @@
 <script setup lang="ts">
+import Header from "@/components/Header.vue";
 import IntroView from "@/views/IntroView.vue";
 import AboutMeView from "@/views/AboutMeView.vue";
 import PortfolioView from "@/views/PortfolioView.vue";
 import TimelineView from "@/views/TimelineView.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
+  <Header />
   <IntroView />
   <AboutMeView />
   <PortfolioView />
   <TimelineView />
-  <div style="position: relative">
-    <span class="footer">&copy;2023 Sander Zeeman</span>
-  </div>
+  <Footer />
 </template>
 
-<style scoped>
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: absolute;
-  bottom: 0;
-  padding-top: 3px;
-  padding-bottom: 3px;
-
-  background-color: #111111;
-  width: 100vw;
-}
-</style>
+<style scoped></style>
