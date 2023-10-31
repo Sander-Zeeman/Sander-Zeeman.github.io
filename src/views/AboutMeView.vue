@@ -1,6 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
+  <h2 class="sub-title">Who am I?</h2>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus aliquam, nibh ac
     scelerisque commodo, eros mi tincidunt ligula, at laoreet velit nisl in sem. Phasellus

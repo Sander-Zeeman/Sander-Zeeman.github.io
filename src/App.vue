@@ -10,10 +10,25 @@ import Footer from "@/components/Footer.vue";
 <template>
   <Header />
   <IntroView />
-  <AboutMeView />
-  <PortfolioView />
-  <TimelineView />
+  <div class="group">
+    <!-- <AboutMeView /> -->
+    <PortfolioView />
+    <!-- <TimelineView /> -->
+  </div>
   <Footer />
 </template>
 
-<style scoped></style>
+<style>
+.sub-title {
+  font-size: 3rem;
+  text-align: center;
+}
+</style>
+
+<style scoped>
+.group {
+  display: grid;
+  grid-auto-flow: rows;
+  gap: 2rem;
+}
+</style>
