@@ -11,11 +11,8 @@
   display: inline-block;
   text-align: center;
 
-  position: absolute;
-  bottom: 0;
-
-  width: 99%;
-  padding: 0.5%;
+  width: 98%;
+  padding: 1%;
 
   background-color: #111111;
 }

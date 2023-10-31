@@ -102,4 +102,7 @@ blockquote,
 q {
   quotes: '' '';
 }
+img, svg {
+  max-width: 100%;
+}
 /* End reset stylesheet */

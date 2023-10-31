@@ -14,19 +14,13 @@
   align-items: center;
   justify-content: space-between;
 
-  position: absolute;
-  top: 0;
-
-  width: 97%;
-  padding: 1.5%;
+  width: 98%;
+  padding: 1%;
 
   background-color: #111111;
 }
 
 .name {
-  font-size: 1.3em;
-}
-
-.download {
+  font-size: 1.3rem;
 }
 </style>

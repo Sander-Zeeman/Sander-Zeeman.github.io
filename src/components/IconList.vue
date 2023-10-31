@@ -6,11 +6,6 @@ import GithubIcon from "@/assets/github_icon.svg";
 import DiscordIcon from "@/assets/discord_icon.svg";
 import MailIcon from "@/assets/gmail_icon.svg";
 
-const linkedin_hover = ref<bool>(false);
-const github_hover = ref<bool>(false);
-const discord_hover = ref<bool>(false);
-const mail_hover = ref<bool>(false);
-
 const linkedin_link = "https://www.linkedin.com/in/" + import.meta.env.VITE_LINKEDIN;
 const github_link = "https://github.com/" + import.meta.env.VITE_GITHUB;
 const discord_link = "https://discordapp.com/users/" + import.meta.env.VITE_DISCORD_ID;
@@ -51,6 +46,6 @@ const mail_link = "mailto:" + import.meta.env.VITE_EMAIL;
 .link {
   width: 40px;
   aspect-ratio: 1;
-  -webkit-filter: invert(100%);
+  filter: invert(100%);
 }
 </style>

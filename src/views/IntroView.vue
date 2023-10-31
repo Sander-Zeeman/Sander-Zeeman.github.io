@@ -8,7 +8,7 @@ const img = import.meta.env.VITE_IMAGE_LINK;
   <div class="vert-container">
     <img :src="img" alt="A picture of me" class="profile-pic" />
     <h1 class="name">Sander Zeeman</h1>
-    <h2 class="subtext">What am I</h2>
+    <h2 class="subtext">Software Engineer</h2>
     <IconList />
   </div>
 </template>
@@ -47,7 +47,7 @@ const img = import.meta.env.VITE_IMAGE_LINK;
 }
 
 .vert-container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
   display: flex;
