@@ -1,28 +1,31 @@
 <script setup lang="ts">
-  import { ref } from 'vue';
+import { ref } from "vue";
 
-  import PortfolioItem from '@/components/PortfolioItem.vue';
+import PortfolioItem from "@/components/PortfolioItem.vue";
 
-  const projects = ref([
-    {
-      "name": "OverTrack",
-      "url": "https://github.com/" + import.meta.env.VITE_GITHUB + "/OverTrack",
-      "img": "./src/assets/temp.jpg",
-      "desc": "Duis egestas ex hendrerit metus facilisis feugiat. Nam congue sem quam, et efficitur augue tincidunt nec. Praesent velit nunc, faucibus in nisi eget, dignissim egestas tellus. Donec quis massa vel."
-    },
-    {
-      "name": "PAG",
-      "url": "https://github.com/" + import.meta.env.VITE_GITHUB + "/PAG",
-      "img": "./src/assets/temp.jpg",
-      "desc": "Duis egestas ex hendrerit metus facilisis feugiat. Nam congue sem quam, et efficitur augue tincidunt nec. Praesent velit nunc, faucibus in nisi eget, dignissim egestas tellus. Donec quis massa vel."
-    },
-    {
-      "name": "IEGS2013XR",
-      "url": "https://github.com/" + import.meta.env.VITE_GITHUB + "/IEGS2013XRandomizer",
-      "img": "./src/assets/temp.jpg",
-      "desc": "Duis egestas ex hendrerit metus facilisis feugiat. Nam congue sem quam, et efficitur augue tincidunt nec. Praesent velit nunc, faucibus in nisi eget, dignissim egestas tellus. Donec quis massa vel."
-    }
-  ])
+const projects = ref([
+  {
+    name: "OverTrack",
+    url: "https://github.com/" + import.meta.env.VITE_GITHUB + "/OverTrack",
+    img: "./src/assets/temp.jpg",
+    desc:
+      "Duis egestas ex hendrerit metus facilisis feugiat. Nam congue sem quam, et efficitur augue tincidunt nec. Praesent velit nunc, faucibus in nisi eget, dignissim egestas tellus. Donec quis massa vel.",
+  },
+  {
+    name: "PAG",
+    url: "https://github.com/" + import.meta.env.VITE_GITHUB + "/PAG",
+    img: "./src/assets/temp.jpg",
+    desc:
+      "Duis egestas ex hendrerit metus facilisis feugiat. Nam congue sem quam, et efficitur augue tincidunt nec. Praesent velit nunc, faucibus in nisi eget, dignissim egestas tellus. Donec quis massa vel.",
+  },
+  {
+    name: "IEGS2013XR",
+    url: "https://github.com/" + import.meta.env.VITE_GITHUB + "/IEGS2013XRandomizer",
+    img: "./src/assets/temp.jpg",
+    desc:
+      "Duis egestas ex hendrerit metus facilisis feugiat. Nam congue sem quam, et efficitur augue tincidunt nec. Praesent velit nunc, faucibus in nisi eget, dignissim egestas tellus. Donec quis massa vel.",
+  },
+]);
 </script>
 
 <template>
@@ -43,6 +46,8 @@
 .ProjectList {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   overflow-x: scroll;
   margin: 1rem;
