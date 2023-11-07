@@ -8,21 +8,21 @@ import TempImage from "@/assets/temp.jpg";
 const projects = ref([
   {
     name: "OverTrack",
-    url: "https://github.com/" + import.meta.env.VITE_GITHUB + "/OverTrack",
+    url: "OverTrack",
     img: TempImage,
     desc:
       "Duis egestas ex hendrerit metus facilisis feugiat. Nam congue sem quam, et efficitur augue tincidunt nec. Praesent velit nunc, faucibus in nisi eget, dignissim egestas tellus. Donec quis massa vel.",
   },
   {
     name: "PAG",
-    url: "https://github.com/" + import.meta.env.VITE_GITHUB + "/PAG",
+    url: "PAG",
     img: TempImage,
     desc:
       "Duis egestas ex hendrerit metus facilisis feugiat. Nam congue sem quam, et efficitur augue tincidunt nec. Praesent velit nunc, faucibus in nisi eget, dignissim egestas tellus. Donec quis massa vel.",
   },
   {
     name: "IEGS2013XR",
-    url: "https://github.com/" + import.meta.env.VITE_GITHUB + "/IEGS2013XRandomizer",
+    url: "IEGS2013XRandomizer",
     img: TempImage,
     desc:
       "Duis egestas ex hendrerit metus facilisis feugiat. Nam congue sem quam, et efficitur augue tincidunt nec. Praesent velit nunc, faucibus in nisi eget, dignissim egestas tellus. Donec quis massa vel.",
@@ -38,7 +38,7 @@ const projects = ref([
       :key="idx"
       :img="project.img"
       :title="project.name"
-      :link="project.url"
+      :internal_name="project.url"
       :desc="project.desc"
     />
   </div>

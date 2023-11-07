@@ -1,12 +1,17 @@
 <script setup lang="ts">
 interface Props {
   title: string;
-  link: string;
+  internal_name: string;
   img: string;
   desc: string;
 }
 
-defineProps<Props>();
+const props = defineProps<Props>();
+
+const link =
+  "https://" + import.meta.env.VITE_GITHUB + ".github.io/" + props.internal_name;
+const source =
+  "https://github.com/" + import.meta.env.VITE_GITHUB + "/" + props.internal_name;
 </script>
 
 <template>
@@ -17,6 +22,7 @@ defineProps<Props>();
         <h3 class="card-title">{{ title }}</h3>
       </a>
       <p>{{ desc }}</p>
+      <a :href="source" class="link" style="text-align: right">Source Code</a>
     </div>
   </div>
 </template>

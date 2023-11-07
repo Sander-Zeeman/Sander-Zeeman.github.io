@@ -15,7 +15,7 @@ const img = import.meta.env.VITE_IMAGE_LINK;
 
 <style scoped>
 .profile-pic {
-  width: 100px;
+  width: 150px;
   aspect-ratio: 1;
   border-radius: 50%;
 }
